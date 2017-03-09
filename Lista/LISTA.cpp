@@ -4,17 +4,22 @@
 
 
 int main(int argc, char *argv[]){
+
+    double *nota = NULL; 
+    double buffer;
+    int n_alumnos = 0;
+
+printf("Numeros negativos para terminar.\n");
 	
-	
-	const char *lista[] = {"Juan","Pedro","German","Pepe", NULL};
+   do{
+        printf("Nota: ");
+        scanf(" %lf", &buffer);
+        if (buffer >= 0){
+            nota = (double *) realloc(nota, ++n_alumnos * sizeof(double));
+            nota[n_alumnos-1] = buffer;
+}
 
- 
-	for (int n=0; lista[n]!=NULL; n++);
- 		 printf("%i.- %s\n", n+1, lista[n]);
-
- 		 	lista = (char *) realloc(lista, ++lista * sizeof(char));
-
- 
+  }while(buffer >= 0);
  
   	 return EXIT_SUCCESS;
  
