@@ -63,7 +63,7 @@ void Intro_Primera (char c[3][3]){
 
 }
 
-void Intro_Me (char c[3][3]){			//Función para meter valores
+void Intro_Me (char c[3][3]){			//FunciÃ³n para meter valores
 	int i,j, k;
 	char aux;
 	do{
@@ -77,13 +77,13 @@ void Intro_Me (char c[3][3]){			//Función para meter valores
 		
 		k = 0;
 		
-		switch (aux){	 //comprobar que el número este repetido
+		switch (aux){	 //comprobar que el nÃºmero este repetido
 			case '1': {
 					i = 0;
 					j = 0;
 					if (c[i][j] == 'x' || c [i][j] == '0'){
 							k = 1;
-					}   	printf ("La casilla esta ocupada! Intentalo con otro número!!\n\n");   
+					}   	printf ("Esta casilla esta ocupada! Intentalo con otro nÃºmero!!\n\n");   
 				break;
 			}
 			
@@ -92,7 +92,7 @@ void Intro_Me (char c[3][3]){			//Función para meter valores
 					j = 1;
 					if (c[i][j] == 'x' || c [i][j] == '0'){
 							k = 1;
-					}   	printf ("La casilla esta ocupada! Intentalo con otro número!!\n\n");   
+					}   	printf ("Esta casilla esta ocupada! Intentalo con otro nÃºmero!!\n\n");   
 				break;
 			}
 			
@@ -101,7 +101,7 @@ void Intro_Me (char c[3][3]){			//Función para meter valores
 					j = 2;
 					if (c[i][j] == 'x' || c [i][j] == '0'){
 							k = 1;
-					}   	printf ("La casilla esta ocupada! Intentalo con otro número!!\n\n");   
+					}   	printf ("Esta casilla esta ocupada! Intentalo con otro nÃºmero!!\n\n");   
 				break;
 			}
 			
@@ -110,7 +110,7 @@ void Intro_Me (char c[3][3]){			//Función para meter valores
 					j = 0;
 					if (c[i][j] == 'x' || c [i][j] == '0'){
 							k = 1;
-					}   	printf ("La casilla esta ocupada! Intentalo con otro número!!\n\n");   
+					}   	printf ("Esta casilla esta ocupada! Intentalo con otro nÃºmero!!\n\n");   
 				break;
 			}
 			
@@ -119,7 +119,7 @@ void Intro_Me (char c[3][3]){			//Función para meter valores
 					j = 1;
 					if (c[i][j] == 'x' || c [i][j] == '0'){
 							k = 1;
-					}   	printf ("La casilla esta ocupada! Intentalo con otro número!!\n\n");   
+					}   	printf ("Esta casilla esta ocupada! Intentalo con otro nÃºmero!!\n\n");   
 				break;
 			}
 			
@@ -128,7 +128,7 @@ void Intro_Me (char c[3][3]){			//Función para meter valores
 					j = 2;
 					if (c[i][j] == 'x' || c [i][j] == '0'){
 							k = 1;
-					}   	printf ("La casilla esta ocupada! Intentalo con otro número!!\n\n");   
+					}   	printf ("Esta casilla esta ocupada! Intentalo con otro nÃºmero!!\n\n");   
 				break;
 			}
 			
@@ -137,7 +137,7 @@ void Intro_Me (char c[3][3]){			//Función para meter valores
 					j = 0;
 					if (c[i][j] == 'x' || c [i][j] == '0'){
 							k = 1;
-					}   	printf ("La casilla esta ocupada! Intentalo con otro número!!\n\n");   
+					}   	printf ("Esta casilla esta ocupada! Intentalo con otro nÃºmero!!\n\n");   
 				break;
 			}
 			
@@ -146,7 +146,7 @@ void Intro_Me (char c[3][3]){			//Función para meter valores
 					j = 1;
 					if (c[i][j] == 'x' || c [i][j] == '0'){
 							k = 1;
-					}   	printf ("La casilla esta ocupada! Intentalo con otro número!!\n\n");   
+					}   	printf ("Esta casilla esta ocupada! Intentalo con otro nÃºmero!!\n\n");   
 				break;
 			}
 			
@@ -155,7 +155,7 @@ void Intro_Me (char c[3][3]){			//Función para meter valores
 					j = 2;
 					if (c[i][j] == 'x' || c [i][j] == '0'){
 							k = 1;
-					}   	printf ("La casilla esta ocupada! Intentalo con otro número!!\n\n");   
+					}   	printf ("Esta casilla esta ocupada! Intentalo con otro nÃºmero!!\n\n");   
 				break;
 			}
 												
@@ -176,8 +176,8 @@ void Intro_Random (char c[3][3]){         //Valores aleatorios
 	
 	srand (time(NULL));
 	do{
-		i = rand() % 3;  		 // En i nos dara 3 números entre el 0 al 2
-		j = rand () % 3;		//  En j nos dara 3 números entre el 0 al 2
+		i = rand() % 3;  		 // En i nos dara 3 nÃºmeros entre el 0 al 2
+		j = rand () % 3;		//  En j nos dara 3 nÃºmeros entre el 0 al 2
 		k = 0;
 		
 	if (c[i][j]  == 'x' || c[i][j] == '0'){
@@ -196,7 +196,7 @@ void tablero (char c [3][3]){
 	for (i = 0; i < 3; i++){
 		for(j = 0; j < 3; j++){
 			if (j < 2){
-				printf(" %c |",c[i][j]);   //Para dejar espacio entre un número y otro "|"
+				printf(" %c |",c[i][j]);   //Para dejar espacio entre un nÃºmero y otro "|"
 			}
 			else {
 				printf(" %c ",c[i][j]);
