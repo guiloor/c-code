@@ -73,11 +73,11 @@ alfil_check (int row, int col, char board[SIZE][SIZE])
   dir.y = -1;
   check_direction(row, col, dir, board);
 
-  dir.x = 1;
+  dir.x = -1;
   dir.y = 1;
   check_direction(row, col, dir, board);
 
-  dir.x = -1;
+  dir.x = 1;
   dir.y = -1;
   check_direction(row, col, dir, board);
 
