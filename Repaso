@@ -1,0 +1,7 @@
+int suma(int op1, int op2)
+int *suma(int,int)
+
+
+int suma(int,int)[]  // una array de funciones a enteros
+int (suma[])(int,int) // una array de funciones que devuelve un entero
+int(*p[])(int,int); // una array de punteros a funciones
