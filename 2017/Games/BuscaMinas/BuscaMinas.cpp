@@ -50,8 +50,50 @@ void colocar_bombas(int minas[][15], int bum)
      {
            renglon = 0 + rand() % 14;
            columna = 0 + rand() % 14;
+<<<<<<< HEAD
 
            minas[renglon][columna] = 3;
+=======
+
+           minas[renglon][columna] = 3;
+     }
+}
+
+void frases_1(int buscar)
+{
+     switch(buscar)
+     {
+         case 1: printf("¡Muy bien!\n");
+                 break;
+
+         case 2: printf("¡Excelente!\n");
+                 break;
+
+         case 3: printf("¡Buen trabajo!\n");
+                 break;
+
+         case 4: printf("¡Sigue asi!\n");
+                 break;
+     }
+}
+
+void frases_2(int numero)
+{
+     switch(numero)
+     {
+         case 1: printf("¡Muy bien!\n");
+                 break;
+
+         case 2: printf("¡Excelente!\n");
+                 break;
+
+         case 3: printf("¡Buen trabajo!\n");
+                 break;
+
+         case 4: printf("¡Sigue asi!\n");
+                 break;
+
+>>>>>>> 4a845e436d6731b6f6ac8fac13937fd96093b558
      }
 }
 
@@ -90,7 +132,11 @@ int main()
            case 4: bombas = 25;
                    break;
 
+<<<<<<< HEAD
            case 5: bombas = 60;
+=======
+           case 5: bombas = 30;
+>>>>>>> 4a845e436d6731b6f6ac8fac13937fd96093b558
                    break;
 
            default: printf("Seleccion invalida, intente de nuevo.\n\n");
@@ -102,6 +148,10 @@ int main()
 
        colocar_bombas(buscaminas, bombas);
 
+<<<<<<< HEAD
+=======
+       tiradas = 0; //este contador lleva cuenta del numero de tiradas en el juego
+>>>>>>> 4a845e436d6731b6f6ac8fac13937fd96093b558
 
        do{
            system("cls");
@@ -116,13 +166,21 @@ int main()
 
            if(buscaminas[i][j] == 3){
                gameStatus = -1;
+<<<<<<< HEAD
             
+=======
+               tiradas++;
+>>>>>>> 4a845e436d6731b6f6ac8fac13937fd96093b558
 
                system("cls");
                printf("\nBuscaminas\n\n");
                imprimir_tablero(buscaminas, gameStatus);
 
+<<<<<<< HEAD
                printf("\t\t\t\t\t  ???Perdiste, el juego ha terminado!!");
+=======
+               printf("\t\t\t\t\t  ¡¡¡Perdiste, el juego ha terminado!!");
+>>>>>>> 4a845e436d6731b6f6ac8fac13937fd96093b558
 
                getchar();
            }
@@ -137,8 +195,13 @@ int main()
                system("cls");
                printf("\nBuscaminas\n\n");
                imprimir_tablero(buscaminas, gameStatus);
+<<<<<<< HEAD
          
                printf("\t\t\t\t\t  ???Has ganado, felicidades!!");
+=======
+         //      gotoxy(80, 4);
+               printf("\t\t\t\t\t  ¡¡¡Has ganado, felicidades!!");
+>>>>>>> 4a845e436d6731b6f6ac8fac13937fd96093b558
 
                getchar();
            }
@@ -148,6 +211,7 @@ int main()
 
        system("cls");
 
+<<<<<<< HEAD
 
        printf("\n-Buscaminas \n\n");
    
@@ -160,6 +224,24 @@ int main()
        printf("\n\n");
 
        printf("?Desea jugar de nuevo(S/N)?: ");
+=======
+       rating = ((double)gameCounter * 100) / 225;
+
+       printf("\n-Buscaminas \n\n");
+       printf("Tu rating  de juego es %lf %lf\n", rating);
+       printf("*No. de tiradas %d.\n\n", tiradas);
+
+       frases = 1 + rand() % 4;
+
+       if(gameStatus == -1)
+         frases_2(frases);
+       else if(victoria == 1)
+         frases_1(frases);
+
+       printf("\n\n");
+
+       printf("¿Desea jugar de nuevo(S/N)?: ");
+>>>>>>> 4a845e436d6731b6f6ac8fac13937fd96093b558
 
        salida = getchar();
        salida = tolower(salida);
@@ -168,7 +250,11 @@ int main()
          for(j = 0; j <= COLUMNA - 1; j++)
            buscaminas[i][j] = 0;
 
+<<<<<<< HEAD
        
+=======
+       gameCounter = 0;
+>>>>>>> 4a845e436d6731b6f6ac8fac13937fd96093b558
 
 
   }while(salida == 's');
@@ -176,6 +262,10 @@ int main()
   system("cls");
 
 
+<<<<<<< HEAD
+=======
+  getchar();
+>>>>>>> 4a845e436d6731b6f6ac8fac13937fd96093b558
 
   return EXIT_SUCCESS;
 }
